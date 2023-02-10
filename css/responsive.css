@@ -1,0 +1,464 @@
+:root {
+    --primary-color : #D30023;
+    --secondary-color: #EEA41D;
+    --tertiary-color: #000000;
+    --additional-color : #FFFFFF;
+    --padding: 60px;
+    --regular: 'Roboto', sans-serif;
+    --font-color : #181818;
+    --heading : 'Monoton', cursive;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1600px) {
+
+    .foods {
+        column-gap: 30px;
+    }
+    .food img {
+        width: 220px;
+    }
+
+    .food h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .content {
+        width: 35%;
+    }
+
+    .image-con {
+        width: 60%;
+        height: 800px;
+    }
+
+    .welcome {
+        font-size: 115px;
+    }
+
+    .content p {
+        font-size: 20px;
+        width: auto;
+    }
+    .fa-quote-left {
+        font-size: 60px;
+    }
+
+    .testimonials {
+        column-gap: 20px;
+    }
+
+    .testimonial img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1300px) {
+    .heading {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    .subheading {
+        font-size: 22px;
+    }
+
+    .content-p {
+        font-size: 16px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .welcome {
+        font-size: 90px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width:900px) {
+    .container-fluid { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger { 
+        display: block;
+
+    }
+
+    .hamburger .line {
+        height: 3px;
+        width: 30px;
+        background-color: var(--secondary-color);
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .nav-links { 
+        position: absolute;
+        top: 100px;
+        right: 0;
+        left: 0;
+        height: 0;
+        width: 100vw;
+        display: block;
+        overflow: hidden;
+        transition: 0.9s;
+        background-color: var(--secondary-color);
+    }
+
+    .nav-links.active{ 
+        height: 350px;
+        /* padding-bottom: 50px; */
+        
+    }
+    .nav-links ul {
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 50px auto 0 auto;
+        opacity: 0;
+    }
+    
+    .nav-links.active ul{
+        opacity: 1;
+    }
+
+    .nav-links.active .nav-button { 
+        opacity: 1;
+    }
+    .nav-links ul li {
+        margin-bottom: 15px;
+    }
+    .nav-links ul li a {
+        color: var(--tertiary-color);
+    }
+    
+    .nav-links .active {
+        color: var(--tertiary-color);
+    }
+
+
+    .nav-button{ 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 15px;
+        opacity: 0;
+    }
+
+    .nav-button a:hover {
+        border: 1px solid var(--tertiary-color);
+    }
+
+    .main-page-con {
+        flex-direction: column-reverse;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .image-con {
+        width: 100%;
+        height: 750px;
+        opacity: .1;
+        display: flex;
+    }
+    
+
+    .content {
+        width: 100%;
+        padding: 50px;
+        position: absolute;
+        z-index: 1;
+        margin: auto;
+    }
+
+    .welcome {
+        font-size: 80px;
+    }
+    
+    .about-us-con {
+        padding: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .about-us-desc {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 40px;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .subheading {
+        font-size: 22px;
+    }
+
+    .content-p {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .video-con {
+        width: 100%;
+        height: 450px;
+    }
+
+    .menu-con {
+        padding: 50px;
+    }
+
+    .menu-con .heading {
+        width: 100%;
+    }
+
+    .menu-con .sub-heading-con {
+        width: 100%;
+    }
+
+    .foods {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    .food img {
+        width: 270px;
+    }
+
+    .testimonial-con {
+        padding: 50px;
+    }
+
+    .testimonial-con .heading {
+        width: 100%;
+    }
+
+    .testimonials {
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    .testimonial {
+        margin-top: 0;
+    }
+
+    .store-details-con {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .store-details-con .store-img {
+        width: 100%;
+        background-size: cover;
+        object-position: center top;
+        border-radius: 0px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .store-map  {
+        width: 100%;
+        height: 400px;
+    }
+
+    .email-us-form-con {
+        padding: 50px;
+        row-gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .email-us-details-con {
+        width: 100%;
+    }
+  
+    .email-us-details-con .email-us-tagline {
+        font-size: 40px;
+    }
+  
+    .email-us-form {
+        width: 100%;
+    }
+
+    footer {
+        padding: 50px;
+      }
+    
+      .footer-logo {
+      width: 200px;
+      height: 130px;
+    }
+
+    .footer-line {
+        margin: 0px 40px;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .welcome {
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .about-us-con {
+        padding: 50px 15px;
+        flex-direction: column-reverse;
+    }
+
+    .about-us-desc {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 35px;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .content-p {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .video-con {
+        width: 100%;
+        height: 350px;
+    }
+
+    .menu-con {
+        padding: 50px 15px;
+    }
+
+    .foods {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 40px;
+    }
+
+    .food img {
+        width: 320px;
+    }
+
+    .testimonial {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-con {
+        padding: 50px 15px;
+    }
+
+    .testimonial img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .fa-quote-left {
+        font-size: 60px;
+    }
+
+    .quote-icon {
+        justify-content: center;
+    }
+
+    .testimonial-image-des-con {
+        display: flex;
+    }
+
+    .our-store-con {
+        padding: 60px 15px 60px 15px; 
+    }
+
+    .store-details-con {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .store-details-con .store-img {
+        width: 100%;
+        background-size: cover;
+        border-radius: 0px;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .store-map  {
+        width: 100%;
+        height: 400px;
+    }
+
+    .email-us-form-con {
+        padding: 50px 15px;
+      }
+      
+      .email-us-details-con .email-us-tagline {
+        font-size: 35px;
+      }
+      
+      .email-us-details-con .email-us-content {
+        font-size: 14px;
+      }
+      
+      #submit {
+        padding: 15px;
+      }
+      
+      
+    footer {
+        padding: 50px 15px 50px 15px;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+    width: 70%;
+    height: 190px;
+    }
+
+    .footer-line {
+        width: 100%;
+        height: 3px;
+        margin: 30px 0px;
+    }
+
+    .icon a {
+    margin-bottom: 15px;
+    width: 100%;
+    }
+  
+
+
+}
+
+
+
