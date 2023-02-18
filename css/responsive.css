@@ -317,6 +317,16 @@
     .footer-line {
         margin: 0px 40px;
     }
+
+    #topBtn{
+        position: fixed;
+        bottom: 40px;
+        right: 28px;
+        height: 45px;
+        width: 45px;
+        font-size: 16px;
+      }
+    
     
 
 }
