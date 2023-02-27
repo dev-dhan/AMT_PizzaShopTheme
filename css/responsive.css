@@ -94,6 +94,7 @@
 
 
 @media only screen and (max-width:900px) {
+
     .container-fluid { 
         display: flex;
         align-items: center;
@@ -115,15 +116,16 @@
 
     .nav-links { 
         position: absolute;
-        top: 100px;
-        right: 0;
+        top: 93px;
         left: 0;
         height: 0;
-        width: 100vw;
         display: block;
         overflow: hidden;
         transition: 0.9s;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
+        opacity: 1;
+        width: 100%;
+
     }
 
     .nav-links.active{ 
@@ -150,11 +152,15 @@
         margin-bottom: 15px;
     }
     .nav-links ul li a {
-        color: var(--tertiary-color);
+        color: var(--additional-color);
     }
     
     .nav-links .active {
-        color: var(--tertiary-color);
+        color: var(--secondary-color);
+    }
+
+    .nav-links ul li a:hover {
+        color: var(--font-color);
     }
 
 
@@ -164,8 +170,11 @@
         align-items: center;
         justify-content: center;
         margin-top: 10px;
-        margin-left: 15px;
         opacity: 0;
+    }
+
+    .nav-button a {
+        margin-right: 30px;
     }
 
     .nav-button a:hover {
@@ -174,8 +183,9 @@
 
     .main-page-con {
         flex-direction: column-reverse;
-        padding: 0;
+        padding: 0px;
         justify-content: center;
+        background-color: rebeccapurple;
     }
 
     .image-con {
@@ -190,7 +200,6 @@
         width: 100%;
         padding: 50px;
         position: absolute;
-        z-index: 1;
         margin: auto;
     }
 

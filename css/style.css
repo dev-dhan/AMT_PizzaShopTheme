@@ -62,15 +62,13 @@ header {
     font-size: 16px;
     z-index: 999;
     column-gap: 30px;
-    
 }
 
 .nav-links ul {
     display: flex;
     column-gap: 20px;
     margin-top: 15px;
-    
-    
+
 }
 
 .nav-button  a{ 
@@ -151,6 +149,7 @@ color: var(--tertiary-color);
     font-family: var(--regular);
 }
 
+
 .btn-welcome {
     padding: 20px 55px;
     border-radius: 30px;
@@ -160,6 +159,7 @@ color: var(--tertiary-color);
     font-weight: 400;
     font-size: 16px;
     color: var(--additional-color);
+    margin-bottom: 30px;
     
 }
 
